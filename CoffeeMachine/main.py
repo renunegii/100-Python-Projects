@@ -2,7 +2,7 @@ water = 400
 milk = 500
 coffee = 250
 amount = 0
-
+#Menu starts here
 MENU = {
     "espresso": {
         "ingredients": {
@@ -40,13 +40,13 @@ resources = {
 # TODO 2: Check if there's enough resources to buy that item.
 # TODO 3: Ask the user to insert coins and then calculate the final amount given by user.
 # TODO 4: Check Transaction is enough or not, if not print "not enough" if yes give remaining money back and give item and next time report should be updated.
-
+#Report function
 def report():
     print(f"water: {water}")
     print(f"milk: {milk}")
     print(f"coffee: {coffee}")
     print(f"money: {amount}")
-
+#function to check resources
 def check_resources(item):
     if water >= MENU[item]["ingredients"]["water"]:
         if milk >= MENU[item]["ingredients"]["milk"]:
