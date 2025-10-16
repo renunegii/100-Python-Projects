@@ -41,6 +41,9 @@ resources = {
 # TODO 3: Ask the user to insert coins and then calculate the final amount given by user.
 # TODO 4: Check Transaction is enough or not, if not print "not enough" if yes give remaining money back and give item and next time report should be updated.
 #Report function
+#water
+#milk
+#coffee
 def report():
     print(f"water: {water}")
     print(f"milk: {milk}")
