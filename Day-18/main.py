@@ -25,18 +25,17 @@ timmy_the_turtle.color("green")
 #         timmy_the_turtle.right(angle)
 
 # creating a random walk
-def random_color():
-    r = random.randint(0, 255)
-    g = random.randint(0, 255)
-    b = random.randint(0, 255)
-    return (r, g, b)
-def random_direction():
-    l=[timmy_the_turtle.forward(40), timmy_the_turtle.left(40), timmy_the_turtle.right(40), timmy_the_turtle.back(40)]
-    return random.random(l)
+
 timmy_the_turtle.pensize(20)
-for i in range(100):
-    color= random_color()
-    timmy_the_turtle.pencolor(color)
-    random_direction()
+turtle_colors = [
+    "blue","IndianRed","Red", "purple","DarkOrchid","DeepSkyBlue","LightSeaGreen","SeaGreen","CornFlowerBlue"]
+turtle_direction=[0,90,180,270]
+for i in range(200):
+    timmy_the_turtle.speed(10)
+    timmy_the_turtle.color(random.choice(turtle_colors))
+    timmy_the_turtle.setheading(random.choice(turtle_direction))
+    timmy_the_turtle.forward(40)
+
+
 screen = Screen()
 screen.exitonclick()
