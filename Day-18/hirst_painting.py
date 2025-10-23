@@ -13,6 +13,7 @@
 #     lst_color.append(tuple(rgb))
 #
 # print(lst_color)
+
 import turtle
 from turtle import Turtle, Screen
 import random
@@ -22,9 +23,17 @@ timmy = Turtle()
 timmy.shape("turtle")
 turtle.screensize(1000,1000)
 timmy.color("green")
-timmy.pensize(20)
 turtle.colormode(255)
-# print(random.choice(color_list))
+timmy.setheading(255)
+timmy.forward(100)
+timmy.setheading(0)
+def back_to_start():
+    timmy.setheading(90)
+    timmy.forward(50)
+    timmy.setheading(180)
+    timmy.forward(500)
+    timmy.setheading(0)
+
 for i in range (10):
     for j in range (10):
         timmy.color(random.choice(color_list))
@@ -32,6 +41,8 @@ for i in range (10):
         timmy.dot(20)
         timmy.penup()
         timmy.forward(50)
+    back_to_start()
+
 
 screen = Screen()
 screen.exitonclick()
