@@ -3,7 +3,7 @@ from turtle import Turtle, Screen
 
 tim = Turtle()
 screen = Screen()
-
+#jbefu wq
 def move_forward():
     tim.forward(40)
 
