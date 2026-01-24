@@ -25,3 +25,4 @@ screen.onkey(move_left, "1")
 screen.onkey(move_right, "2")
 screen.onkey(move_in_circle, "space")
 screen.exitonclick()
+
