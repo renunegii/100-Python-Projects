@@ -1,12 +1,4 @@
-from time import sleep
 from turtle import Turtle, Screen
-import time
-
-screen = Screen()
-screen.setup(600,600)
-screen.bgcolor("black")
-screen.title("Snake Game")
-screen.tracer(0)
 
 snake_pos = [-40,-20,0]
 snake_segments=[]
@@ -27,13 +19,3 @@ while is_game_on:
         new_y = snake_segments[seg_num-1].ycor()
         snake_segments[seg_num].goto(new_x,new_y)
     snake_segments[0].forward(20)
-    snake_segments[0].left(90)
-
-
-
-
-
-
-
-
-screen.exitonclick()
