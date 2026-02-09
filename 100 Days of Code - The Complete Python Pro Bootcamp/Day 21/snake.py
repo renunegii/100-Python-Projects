@@ -1,5 +1,15 @@
 from turtle import Turtle, Screen
+import time
 
+class Snake:
+    def __init__(self,q_list):
+        self.score = 0
+        self.question_no=0
+        self.question_list = q_list
+
+    def move
+
+screen = Screen()
 snake_pos = [-40,-20,0]
 snake_segments=[]
 for i in range(0,3):
